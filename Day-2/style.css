@@ -1,0 +1,24 @@
+*{
+margin : 0;
+padding : 0;
+box-sizing:border-box;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+background: black;
+color: white;
+}
+
+.frist_section{
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+}
+.frist_section p{
+    font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 20px;
+}
