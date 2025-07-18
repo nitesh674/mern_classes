@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h2>JavaScript Functions</h2>
+    <script>
+        // Functions in JavaScript can be declared in several ways:        
+        function Chacha(){
+            console.log("this is a Chacha function");
+            return
+        }
+
+        // This is an IIFE (Immediately Invoked Function Expression)
+        (function (){
+            console.log("this is an IIFE- Immediately Invoked Function Expression");
+        })();
+
+
+
+        // arrow function
+        const arrowFunction = () => {
+            console.log("this is an arrow function");    
+        }
+
+
+
+        arrowFunction();
+        Chacha();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Frist_Class</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="#">
+        <h2>Register</h2>
+        <div class="group1">
+            <div class="input-box">
+                <label for="email">Full name</label>
+                <input type="text" id="fullname" placeholder="enter your full name" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Username</label>
+                <input type="text" id="username" placeholder="enter your username" required>
+            </div>
+        </div>
+        <div class="group1">
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="enter your Email" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Phone Number</label>
+                <input type="password" id="phonenumber" placeholder="enter your Phone number" required>
+            </div>
+            
+        </div>
+        <div class="group1">
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="enter your password" required>
+            </div>
+            <div class="input-box"> 
+                <label for="email">Confirm password</label>
+                <input type="password" id="confirmpassword" placeholder="enter your confirm password" required>
+            </div>
+        </div>  
+        <div class="group2">
+            <div class="input-box2">
+                <label for="password">Gender</label>
+            </div>
+              <input type="radio" name="gender" id="male" value="male" required>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female" required>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other" value="other" required>
+              <label for="other">Other</label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
