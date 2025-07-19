@@ -1,0 +1,167 @@
+*{
+margin : 0;
+padding : 0;
+box-sizing:border-box;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+background: #D1C9D6;
+/* color: white; */
+}
+.container{
+    width: 100%;
+    height: 15vh;
+}
+nav{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+ul{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+li:first-child{
+    border-bottom: solid 2px white;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#container2{
+    width: 100%;
+    height: 85vh;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-section{
+    width: 50%;
+    padding: 4vw;
+}
+.hero-section h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    letter-spacing: 10px;
+    color: #1B1B2F;
+}
+.hero-section p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 10px;
+}
+.hero-section a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn{
+    padding: 10px;
+    font-size: 1.5rem;
+  background-color: #63C3F0;
+  color: white;
+  border: none;
+}
+.btn2{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
+}
+.btn:hover {
+  background-color: #2442A3;
+}
+.btn2:hover {
+  background-color: #2442A3;
+  border: none;
+}
+.image-section{
+    width: 50%;
+}
+.image-section img{
+    width: 100%;
+    height: 84vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+/* ----------- Tablet Screens (768px and below) ----------- */
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  li {
+    margin: 5px 10px;
+    font-size: 1rem;
+  }
+  #container2 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .hero-section, .image-section {
+    width: 100%;
+  }
+
+  .image-section img {
+    height: auto;
+    max-width: 90%;
+  }
+
+  .btn, .btn2 {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+}
+
+/* ----------- Mobile Screens (480px and below) ----------- */
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  ul {
+    gap: 5px;
+  }
+
+  .btn, .btn2 {
+    display: block;
+    margin: 10px auto;
+  }
+}
