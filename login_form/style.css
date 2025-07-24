@@ -1,0 +1,110 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/1200x/19/fc/fb/19fcfbb5debcb7d95a5f73a556a54b39.jpg'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+    .form-box {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.0);
+      padding: 30px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .form-box h2 {
+      color: #013220;
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .form-box i.user-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .form-box input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 250px;
+      border: none;
+      background: rgba(255, 255, 255, 0.4);
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icons img{
+      width: 70px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    
+@media (max-width: 320px) {
+  .form-box{
+    height: 50vh;
+    width: 75vw;
+  }
+
+  .form-box h2 {
+    font-size: 9vw;
+        font-weight: 100;
+  }
+  #user{
+    font-size: 20vw;
+    color: black;
+  }
+
+    .form-box input {
+         display: block;
+        margin: 62px auto;
+        padding: 70px;
+        width: 70vw;
+        border: none;
+        background: rgba(255, 255, 255, 0.4);
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 5px;
+        height: 6vh;
+        font-size: 4vw;
+    }
+    
+  .social-icons img {
+    width: 30vw;
+  }
+
+}
