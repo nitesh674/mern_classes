@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom- Document Object Modal</title>
 </head>
+<style>
+    /* .box {
+        background-color: aqua;
+    } */
+    #box{
+        width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+</style>
+
 <body>
-    <h1>Dom - Document Object Modul</h1>
+    <h1 style="text-align: center;">Dom - Document Object Modul</h1>
+        <h1 style="text-align: center;">Level 1 – Basic Practice</h1>
+    <!-- 1. **Change Text Content using getElementById:**
+
+       * Ek <p> tag banao jiska id="myPara" ho.
+       * JavaScript se uske andar ka text change karo to: "Hello, DOM!" -->
+
+    <p id="myPar">this is test pra</p>
+
+    <!-- 2. **Change Style using getElementsByClassName:**
+
+       * 3 <div> elements banao jinka class "box" ho.
+       * JavaScript se sabhi ka background color yellow karo. -->
+
+    <div class="box">Change Style using getElementsByClassName:</div>
+    <div class="box">Change Style using getElementsByClassName:</div>
+    <div class="box">Change Style using getElementsByClassName:</div>
+
+    <!-- 3 . Use querySelector to select and update:
+        Ek <h2> tag banao aur uska color red karo using querySelector. -->
+
+    <h3>This is color changing text </h3>
+
+ <h1 style="text-align: center;">Level 2 – Intermediate Practice</h1>
+
+ <button onclick="hideMe()">Hide Me</button>
+ <div id="box"></div>
+
+ <!-- 5. *Change All Elements with Same Class:*
+
+   * 5 <li class="item"> items banao.
+   * JavaScript se sabhi items ka text bold aur font-size 18px karo. -->
+
+    <h3>Change All Elements with Same Class:</h3>
+    <div class="item">Change Style using getElementsByClassName:</div>
+    <div class="item">Change Style using getElementsByClassName:</div>
+    <div class="item">Change Style using getElementsByClassName:</div>
+    <div class="item">Change Style using getElementsByClassName:</div>
+    
+
+<!-- 6. **Use querySelectorAll to select multiple tags:**
+
+   * 3 <p> tags banao.
+   * querySelectorAll("p") ka use karke unka text blue karo. -->
+    <h3>Use querySelectorAll to select multiple tags:</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae consectetur quo quod, totam quia, quidem repudiandae vero eveniet, repellendus necessitatibus deleniti possimus in molestiae voluptates perferendis ducimus reiciendis odio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae consectetur quo quod, totam quia, quidem repudiandae vero eveniet, repellendus necessitatibus deleniti possimus in molestiae voluptates perferendis ducimus reiciendis odio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae consectetur quo quod, totam quia, quidem repudiandae vero eveniet, repellendus necessitatibus deleniti possimus in molestiae voluptates perferendis ducimus reiciendis odio.</p>
 
 
+    <script src="script.js"></script>
 </body>
 </html>
